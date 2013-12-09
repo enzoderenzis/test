@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>orientDB</artifactId>
+		<groupId>ar.enzo.orientDB</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>ar.enzo.orientDB</groupId>
+	<artifactId>orientDB-jboss7</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>orientDB-jboss7</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<ops4j.orient.version>0.2.0</ops4j.orient.version>
+		<orientDB.version>1.6.1</orientDB.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.orientechnologies</groupId>
+			<artifactId>orientdb-object</artifactId>
+			<version>${orientDB.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.orientechnologies</groupId>
+			<artifactId>orient-commons</artifactId>
+			<version>${orientDB.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.orientechnologies</groupId>
+			<artifactId>orientdb-core</artifactId>
+			<version>${orientDB.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.orient</groupId>
+			<artifactId>orient-ra-api</artifactId>
+			<version>${ops4j.orient.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
